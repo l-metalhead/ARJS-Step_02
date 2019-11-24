@@ -15,12 +15,8 @@
 </head>
 <body>
     <a-scene embedded arjs>
-        <a-assets>
-            <img id="cat" src="_img/rocket_cat.gif"></img>
-        </a-assets>
-
         <a-marker preset="hiro">
-            <a-entity geometry="primitive: box;" material="shader: gif; src: ulr(#cat); color: green; opacity: .8;"></a-entity>
+            <a-entity geometry="primitive: box;" material="shader: gif; src: ulr(_img/rocket_cat.gif); color: green; opacity: .8;"></a-entity>
         </a-marker>
 
         <a-camera></a-camera>
